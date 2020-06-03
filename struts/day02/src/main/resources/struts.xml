@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package name="Login" namespace="/login" extends="struts-default">
+        <!--       这个action 没有class,其用途是在请求/login/form时候转发到login.jsp,使用户能够
+                    看到这个jsp页面-->
+        <action name="form">
+            <result>/WEB-INF/login.jsp</result>
+        </action>
+        <action name="check" class="cn.tedu.action.LoginAction">
+            <result name="success">/WEB-INF/success.jsp</result>
+            <result name="login">/WEB-INF/login.jsp</result>
+        </action>
+        <action name="form2">
+            <result>/WEB-INF/login2.jsp</result>
+        </action>
+        <action name="check2" class="cn.tedu.action.LoginAction2">
+            <result name="success">/WEB-INF/success.jsp</result>
+            <result name="error">/WEB-INF/login2.jsp</result>
+        </action>
+    </package>
+</struts>

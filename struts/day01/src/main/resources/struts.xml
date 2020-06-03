@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <!--    namespace 用于定义一级请求路径
+                        http://localhost:808/struts_day01/demo/hello
+            name : 给package定义名称、id
+    -->
+    <package namespace="/demo" name="demo" extends="struts-default">
+<!--        在请求/demo/hello时候Struts就会利用反射创建DemoAction对象，并且执行execute方法
+-->
+        <action name="hello" class="cn.tedu.action.DemoAction">
+<!--            <result> 用于处理execute方法返回值与jsp视图的对应关系，也就是转发到哪个页面-->
+            <result name="msg">
+                /WEB-INF/msg.jsp
+            </result>
+        </action>
+<!--        methon用于执行控制中的特定方法-->
+        <action name="test" class="cn.tedu.action.DemoAction" method="test">
+            <result name="success">/WEB-INF/msg.jsp</result>
+        </action>
+<!--        从浏览器中接收参数-->
+        <action name="param" class="cn.tedu.action.ParamAction" >
+            <result name="success">/WEB-INF/msg.jsp</result>
+        </action>
+    </package>
+</struts>

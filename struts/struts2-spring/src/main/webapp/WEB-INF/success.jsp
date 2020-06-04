@@ -12,6 +12,6 @@
     <title>消息</title>
 </head>
 <body>
-<h1>${message}${loginName}</h1>
+<h1>${message}${session.session}</h1>
 </body>
 </html>

@@ -5,6 +5,7 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
     <package name="Login" namespace="/login" extends="struts-default">
+<!--        使用由Spring管理的Action组件webAction在配置Action期间将class属性引用BeanID即可-->
         <action name="web" class="webAction">
             <result name="success">/WEB-INF/success.jsp</result>
         </action>

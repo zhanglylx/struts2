@@ -21,5 +21,8 @@
             <result name="success">/WEB-INF/success.jsp</result>
             <result name="error">/WEB-INF/login2.jsp</result>
         </action>
+        <action name="test" class="cn.tedu.action.TestAction">
+            <result name="success">/WEB-INF/demo.jsp</result>
+        </action>
     </package>
 </struts>

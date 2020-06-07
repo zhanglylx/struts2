@@ -21,5 +21,30 @@
                 <param name="inputName">photo</param>
             </result>
         </action>
+        <action name="excel" class="excelAction">
+            <result name="success" type="stream">
+                <!--                新版-->
+                <!--                <param name="contentType">-->
+                <!--                    application/vnd.openxmlformats-officedocument.spreadsheetml.sheet-->
+                <!--                </param>-->
+                <!--                老版-->
+                <param name="contentType">
+                    application/vnd.ms-excel
+                </param>
+                <param name="inputName">excel</param>
+            </result>
+        </action>
+<!--        <action name="test" class="redirectAction">-->
+<!--            &lt;!&ndash;            redirect用于重定向到URL&ndash;&gt;-->
+<!--            <result name="doc" type="redirect">-->
+<!--                http://doc.tedu.cn-->
+<!--                &lt;!&ndash;                location是默认属性，可以不写param标签&ndash;&gt;-->
+<!--                &lt;!&ndash;                <param name="loction"> http://doc.tedu.cn</param>&ndash;&gt;-->
+<!--            </result>-->
+<!--            &lt;!&ndash;            redirectAction用于重定向到action&ndash;&gt;-->
+<!--            <result name="photo" type="redirectAction">-->
+<!--                photo-->
+<!--            </result>-->
+<!--        </action>-->
     </package>
 </struts>

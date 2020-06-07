@@ -14,6 +14,7 @@ public class WebAction extends BaseAction {
 
     public String execute() {
         System.out.println("Web Action");
+        System.out.println(Thread.currentThread().getId());
         this.request.put("message", "I am from Spring!");
 //        控制器访问业务层，调用业务层组件方法
         String str = this.demoService.test();

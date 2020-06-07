@@ -9,6 +9,8 @@
   <version>1.0-SNAPSHOT</version>
     <modules>
         <module>day02</module>
+        <module>struts2-spring</module>
+        <module>result</module>
     </modules>
     <packaging>pom</packaging>
 

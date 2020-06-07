@@ -46,5 +46,9 @@
                 photo
             </result>
         </action>
+<!--        可以自行扩展Result类型，查百度-->
+<!--        <result-types>-->
+<!--            <result-type name="" class=""></result-type>-->
+<!--        </result-types>-->
     </package>
 </struts>

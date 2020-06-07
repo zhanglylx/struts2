@@ -45,6 +45,13 @@
             <artifactId>struts2-json-plugin</artifactId>
             <version>2.5.22</version>
         </dependency>
+<!--        excel-->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.1.2</version>
+        </dependency>
 
     </dependencies>
 

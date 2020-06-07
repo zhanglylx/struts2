@@ -34,17 +34,17 @@
                 <param name="inputName">excel</param>
             </result>
         </action>
-<!--        <action name="test" class="redirectAction">-->
-<!--            &lt;!&ndash;            redirect用于重定向到URL&ndash;&gt;-->
-<!--            <result name="doc" type="redirect">-->
-<!--                http://doc.tedu.cn-->
-<!--                &lt;!&ndash;                location是默认属性，可以不写param标签&ndash;&gt;-->
-<!--                &lt;!&ndash;                <param name="loction"> http://doc.tedu.cn</param>&ndash;&gt;-->
-<!--            </result>-->
-<!--            &lt;!&ndash;            redirectAction用于重定向到action&ndash;&gt;-->
-<!--            <result name="photo" type="redirectAction">-->
-<!--                photo-->
-<!--            </result>-->
-<!--        </action>-->
+        <action name="test" class="redirectAction">
+            <!--            redirect用于重定向到URL-->
+            <result name="doc" type="redirect">
+                http://doc.tedu.cn
+                <!--                location是默认属性，可以不写param标签-->
+                <!--                <param name="loction"> http://doc.tedu.cn</param>-->
+            </result>
+            <!--            redirectAction用于重定向到action-->
+            <result name="photo" type="redirectAction">
+                photo
+            </result>
+        </action>
     </package>
 </struts>

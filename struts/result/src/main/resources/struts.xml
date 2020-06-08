@@ -65,4 +65,11 @@
             <result name="success">/WEB-INF/ok.jsp</result>
         </action>
     </package>
+    <!--    demo默认是关闭，需要更改为true-->
+    <constant name="struts.devMode" value="true"/>
+    <package name="testStack" extends="struts-default" namespace="/testStack">
+        <action name="stack" class="stackAction">
+            <result name="success">/WEB-INF/demo.jsp</result>
+        </action>
+    </package>
 </struts>

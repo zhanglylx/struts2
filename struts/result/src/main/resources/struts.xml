@@ -46,9 +46,19 @@
                 photo
             </result>
         </action>
-<!--        可以自行扩展Result类型，查百度-->
-<!--        <result-types>-->
-<!--            <result-type name="" class=""></result-type>-->
-<!--        </result-types>-->
+        <!--        可以自行扩展Result类型，查百度-->
+        <!--        <result-types>-->
+        <!--            <result-type name="" class=""></result-type>-->
+        <!--        </result-types>-->
+    </package>
+
+    <package name="test" namespace="/test" extends="struts-default">
+        <interceptors>
+            <interceptor name="demoInc" class="demoInterceptor"/>
+        </interceptors>
+        <action name="demo" class="demoAction">
+            <interceptor-ref name="demoInc"/>
+            <result name="success">/WEB-INF/ok.jsp</result>
+        </action>
     </package>
 </struts>

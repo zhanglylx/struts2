@@ -55,9 +55,13 @@
     <package name="test" namespace="/test" extends="struts-default">
         <interceptors>
             <interceptor name="demoInc" class="demoInterceptor"/>
+            <interceptor-stack name="mystack">
+                <interceptor-ref name="basicStack"/>
+                <interceptor-ref name="demoInc"/>
+            </interceptor-stack>
         </interceptors>
         <action name="demo" class="demoAction">
-            <interceptor-ref name="demoInc"/>
+            <interceptor-ref name="mystack"/>
             <result name="success">/WEB-INF/ok.jsp</result>
         </action>
     </package>
